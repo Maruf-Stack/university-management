@@ -1,13 +1,35 @@
-import cors from 'cors';
-import { Application, Request, Response } from 'express';
-const express = require('express');
-const app: Application = express();
-const port = 300;
-app.use(cors());
-app.use(express.json());
+import cors from 'cors'
+import express, { Application, NextFunction, Request, Response } from 'express'
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!');
-});
+import userrouter from './app/module/user/user.route'
+import globalErrorHandler from './app/middlewears/globalerroHandler'
+import httpStatus from 'http-status'
+const app: Application = express()
 
-export default app;
+app.use(cors())
+
+// parser
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+// application routes
+app.use('/api/v1/users/', userrouter)
+
+app.use(globalErrorHandler)
+
+//handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'API Not Found',
+      },
+    ],
+  })
+  next()
+})
+
+export default app
