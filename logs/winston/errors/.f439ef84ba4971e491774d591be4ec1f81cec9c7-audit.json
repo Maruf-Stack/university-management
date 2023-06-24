@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\.f439ef84ba4971e491774d591be4ec1f81cec9c7-audit.json",
+  "files": [
+    {
+      "date": 1687155850958,
+      "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-19-06-12-error.log",
+      "hash": "bad05d2ae4bec56a3835fa2b11889d97a0136563a5b872efe1a36ecc48972343"
     },
-    "auditLog": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\.f439ef84ba4971e491774d591be4ec1f81cec9c7-audit.json",
-    "files": [
-        {
-            "date": 1687155850958,
-            "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-19-06-12-error.log",
-            "hash": "bad05d2ae4bec56a3835fa2b11889d97a0136563a5b872efe1a36ecc48972343"
-        },
-        {
-            "date": 1687325419000,
-            "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-21-06-11-error.log",
-            "hash": "21a6a8c2b81c354ced54f6e4a17704bc2d0e0f91b29a1a12df33ffe9cc87c0da"
-        },
-        {
-            "date": 1687327398008,
-            "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-21-06-12-error.log",
-            "hash": "869090116137465282d3e1797760b098c90d6fd220bc9601f4405ad5943d6e62"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1687325419000,
+      "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-21-06-11-error.log",
+      "hash": "21a6a8c2b81c354ced54f6e4a17704bc2d0e0f91b29a1a12df33ffe9cc87c0da"
+    },
+    {
+      "date": 1687327398008,
+      "name": "D:\\projects\\NEXT LEVEL WEB DEVELOPMENT\\milestone_3\\university-management-auth-service\\logs\\winston\\errors\\phu-2023-21-06-12-error.log",
+      "hash": "869090116137465282d3e1797760b098c90d6fd220bc9601f4405ad5943d6e62"
+    }
+  ],
+  "hashType": "sha256"
 }
